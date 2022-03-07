@@ -36,7 +36,7 @@ h1 {
 }
 .top-container {
   width: 100%;
-  min-height: 40rem;
+  min-height: 50rem;
   background-image: url("images/desktop/image-header.jpg");
   background-repeat: round;
   color: var(--White);
@@ -248,7 +248,7 @@ h1 {
   cursor: pointer;
 }
 .footer-social {
-  padding-top: 1rem;
+  padding-top: 2rem;
   display: flex;
   justify-content: space-evenly;
 }
