@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-container">
+      <header class="head-nav">
+        <div class="nav-name">sunnyside</div>
+        <ul class="nav-menu">
+          <li class="menu-items">About</li>
+          <li class="menu-items">Services</li>
+          <li class="menu-items">Projects</li>
+          <li class="btn">CONTACT</li>
+        </ul>
+      </header>
+      <div class="top-title"><h1>WE ARE CREATIVES</h1></div>
+      <div class="arrow-image">
+        <img src="images/icon-arrow-down.svg" alt="" />
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="items item1">
+        <div class="item-container">
+          <h1>Transform your brand</h1>
+          <p>
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <h5>LEARN MORE</h5>
+        </div>
+      </div>
+      <img
+        src="images/desktop/image-transform.jpg"
+        alt=""
+        class="items item2"
+      />
+      <img
+        src="images/desktop/image-stand-out.jpg"
+        alt=""
+        class="items item3"
+      />
+      <div class="items item4">
+        <div class="item-container">
+          <h1>Stand out to the right audience</h1>
+          <p>
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we'll build and
+            extend your brand in digital places.
+          </p>
+          <h5>LEARN MORE</h5>
+        </div>
+      </div>
+      <div class="items item5">
+        <div class="item-container2">
+          <h1>Graphic Design</h1>
+          <p>
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+      </div>
+      <div class="items item6">
+        <div class="item-container2">
+          <h1>Photography</h1>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials-container">
+      <div class="testimonials">
+        <h1 class="test-header">CLIENT TESTIMONIALS</h1>
+        <div class="test-grid">
+          <div class="test-item1 tests">
+            <img src="images/image-emily.jpg" alt="" class="client-img" />
+            <p class="test-message">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <h5 class="client-name">Emily R.</h5>
+            <h6 class="client-job">Marketing Director</h6>
+          </div>
+          <div class="test-item2 tests">
+            <img src="images/image-thomas.jpg" alt="" class="client-img" />
+            <p class="test-message">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <h5 class="client-name">Thomas S.</h5>
+            <h6 class="client-job">Chief Operating Officer</h6>
+          </div>
+          <div class="test-item3 tests">
+            <img src="images/image-jennie.jpg" alt="" class="client-img" />
+            <p class="test-message">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <h5 class="client-name">Jennie F.</h5>
+            <h6 class="client-job">Business Owner</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-images">
+      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="" />
+      <img src="images/desktop/image-gallery-orange.jpg" alt="" />
+      <img src="images/desktop/image-gallery-cone.jpg" alt="" />
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="" />
+    </div>
+    <footer class="footer-container">
+      <div>
+        <h2 class="footer-name">sunnyside</h2>
+        <ul class="footer-menu">
+          <li class="">About</li>
+          <li class="">Services</li>
+          <li class="">Projects</li>
+        </ul>
+        <ul class="footer-social">
+          <li><img src="images/icon-facebook.svg" alt="" /></li>
+          <li><img src="images/icon-instagram.svg" alt="" /></li>
+          <li><img src="images/icon-twitter.svg" alt="" /></li>
+          <li><img src="images/icon-pinterest.svg" alt="" /></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://pratheeknoojipady.netlify.app/" target="_blank"
+        >Pratheek N</a
+      >.
+    </div>
+    <script>
+      function myFunction(x) {
+        if (x.matches) {
+          alert("Please open in Desktop");
+          document.body.classList.add("hidden");
+        } else {
+          document.body.classList.remove("hidden");
+        }
+      }
+      let x = window.matchMedia("(max-width:1100px)");
+      myFunction(x);
+      x.addListener(myFunction);
+    </script>
+  </body>
+</html>
